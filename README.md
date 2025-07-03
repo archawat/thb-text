@@ -14,7 +14,7 @@ A TypeScript library for converting numbers to Thai text representation for curr
 ## Installation
 
 ```bash
-npm install thai-baht-text
+npm install thb-text
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install thai-baht-text
 ### การใช้งานพื้นฐาน
 
 ```typescript
-import { thaiBahtText, ThaiBahtTextUtil } from 'thai-baht-text';
+import { thaiBahtText, ThaiBahtTextUtil } from 'thb-text';
 
 // ใช้ฟังก์ชัน utility
 console.log(thaiBahtText(121.50)); // "หนึ่งร้อยยี่สิบเอ็ดบาทห้าสิบสตางค์"
@@ -36,7 +36,7 @@ console.log(ThaiBahtTextUtil.thaiBahtText(121.50)); // "หนึ่งร้อ
 หากต้องการใช้ method กับ Number objects โดยตรง:
 
 ```typescript
-import { registerNumberPrototype } from 'thai-baht-text';
+import { registerNumberPrototype } from 'thb-text';
 
 // ลงทะเบียน prototype extension
 registerNumberPrototype();
@@ -45,10 +45,10 @@ registerNumberPrototype();
 console.log((121.50).thaiBahtText()); // "หนึ่งร้อยยี่สิบเอ็ดบาทห้าสิบสตางค์"
 ```
 
-### การใช้งานขั้นสูง
+### การใช้งานแบบปรับแต่งพารามิเตอร์
 
 ```typescript
-import { ThaiBahtTextUtil, Unit } from 'thai-baht-text';
+import { ThaiBahtTextUtil, Unit } from 'thb-text';
 
 // ใช้ options object
 const options = {
