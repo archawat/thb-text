@@ -1,6 +1,6 @@
 {
   "name": "thb-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Thai Baht Text converter - converts numbers to Thai text representation for currency amounts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
